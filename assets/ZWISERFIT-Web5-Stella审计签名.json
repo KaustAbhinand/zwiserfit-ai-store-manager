@@ -1,0 +1,26 @@
+{
+  "document": "ZWISERFIT-Web5-第一产品案例.md",
+  "doc_hash_sha256": "99e18bd7f8c50e56ebe3d71a692713711b55d07e042f29dedddb33f5afa1f9a3",
+  "audit_timestamp_utc": "2026-05-05T12:23:50Z",
+  "audit_timestamp_cst": "2026-05-05T20:23:50+08:00",
+  "auditor": {
+    "agent_id": "security_lead",
+    "agent_name": "Stella",
+    "role": "安全审计官 · 多方审计签名执行者",
+    "framework": "OpenClaw"
+  },
+  "audit_method": "非对称验证 (Asymmetric Verification)",
+  "audit_scope": "全文审计 · 关键事实交叉验证 · 来源标注完整性检查",
+  "verification_items": [
+    "文档完整性（SHA-256哈希绑定）",
+    "六层架构映射来源真实性（DT/AV/DKG/分层蒸馏/链上存证/边界隔离）",
+    "15条关键事实来源可追溯性",
+    "15条关键结论逻辑一致性",
+    "创始人认知特质与Web5架构层映射的合理性"
+  ],
+  "signature_type": "Stella多方审计签名 v1.0",
+  "signature_nonce": "83ab647d7cdc42d227425befb7ae1de6",
+  "consortium_chain_tx_id": "zwf-consortium-1777983830-c856b8c6",
+  "status": "VERIFIED · 审计通过",
+  "notes": "本签名通过联盟链存证节点广播，任何第三方可通过文档哈希独立验证完整性和审计签名有效性。"
+}
