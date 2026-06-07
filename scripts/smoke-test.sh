@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+set -eou pipefail
 FAILED=0
 failed_checks=()
 
@@ -9,7 +9,7 @@ fail() { printf " FAIL: %s\n" "$1"; failed_checks+=("$1"); FAILED=1;}
 # 1. Check if required tools are installed
 printf "\n── Checking required tools ──\n"
 for tool in git python3 node curl; do
-    command -v "$tool" > /dev/null 2>&1 && pass "$tool is installed" || fail "$tool is not installed"
+    command -v "$tool" > /dev/null 2>&1 && pass "$tool is installed" || { fail "$tool is not installed"; true; }
 done
 
 # 2. Check if Repository is properly cloned
